@@ -1,50 +1,66 @@
 # GenAI Operations Control Tower
 
-An end-to-end portfolio project simulating the work of an Operations Data Analyst supporting GenAI training-data delivery.
+An end-to-end operations analytics portfolio project simulating an AI-training-data services operation. Demonstrates Microsoft SQL Server/T-SQL, Python, Tableau, operational KPI design, SLA monitoring, root-cause analysis, capacity planning, and GenAI-assisted reporting.
+
+> All business entities, targets, and operational records are fictional and intended for portfolio demonstration.
 
 ## Business objective
 
-Monitor production, quality, SLA attainment, backlog and workforce capacity. Detect exceptions, investigate root causes, communicate findings to management and track corrective actions.
-
-## Fictional business context
-
-- Client: Asterion AI
-- Five AI-data operations projects
-- Approximately 300 workers
-- 90 days of synthetic operational history
-- Target volume: 200,000–400,000 task records
-
-All companies, records, targets and operational scenarios in this project are fictional.
+Monitor production, quality, service-level performance, backlog, workforce capacity, and operational risks. Translate raw operational data into management-ready insights and actionable exceptions.
 
 ## Technology stack
 
 - Microsoft SQL Server and T-SQL
-- Python, Pandas and NumPy
+- Python, pandas, NumPy, SQLAlchemy, pyodbc, statsmodels
 - Tableau
-- GitHub
+- Git and GitHub
+- GenAI-assisted analysis with human verification
 
-## Project workflow
+## Architecture
 
-Synthetic data → SQL modelling → KPI calculations → Exception detection → Root-cause analysis → Management reports → Tableau dashboards
+Raw CSVs → SQL Server staging → typed tables → KPI/reporting layer → Tableau dashboards → exception investigation → action tracking.
 
-## Progress
+## Project progress
 
-- [x] Phase 0 — Project scope and repository setup
+- [x] Phase 0 — Project specification and repository setup
 - [ ] Phase 1 — Synthetic data generation
-- [ ] Phase 2 — PostgreSQL modelling
+- [ ] Phase 2 — Database and data modelling
 - [ ] Phase 3 — KPI layer
 - [ ] Phase 4 — Exception management
-- [ ] Phase 5 — Root-cause analysis
+- [ ] Phase 5 — Root-cause drills
 - [ ] Phase 6 — Management reports
 - [ ] Phase 7 — Capacity and forecasting
 - [ ] Phase 8 — Tableau dashboards
 - [ ] Phase 9 — Simulated work week
-- [ ] Phase 10 — Final portfolio and interview preparation
+- [ ] Phase 10 — Portfolio packaging and interview preparation
 
-## What this project demonstrates
+## Repository structure
 
-Operational analytics, SQL data modelling, KPI design, SLA monitoring, root-cause investigation, workforce capacity analysis and executive reporting.
+- `docs/` — project specification, data dictionary, KPI catalog, screenshots
+- `data/sample/` — small, sanitized sample CSVs
+- `src/data_generator/` — deterministic synthetic data generator
+- `src/analysis/` — Python analysis and validation
+- `src/forecasting/` — demand and capacity models
+- `sql/01_ddl/` — database and table definitions
+- `sql/02_load/` — staging and data-loading scripts
+- `sql/03_views/` — reporting views
+- `sql/04_kpis/` — KPI calculations
+- `sql/05_exceptions/` — exception reporting
+- `sql/06_rootcause/` — investigation queries
+- `reports/` — management reports
+- `tableau/` — dashboard documentation and workbooks
+- `simulation/` — operational exercises and lessons learned
 
-## How to reproduce
+Detailed commands and validation checks will be added phase by phase.
 
-Instructions and runnable scripts will be added phase by phase. All datasets are synthetic; large generated files and sensitive credentials will be excluded from the repository.
+## What this phase demonstrates
+
+Project scoping, repository documentation, and operational data-model design.
+
+## Data and security policy
+
+Generated raw data, credentials, environment files, database files, and large Tableau extracts must not be committed. Only source code and small synthetic samples should be published.
+
+## License
+
+MIT. See `LICENSE`.
