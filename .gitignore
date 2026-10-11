@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Generated datasets
+data/raw/
+data/generated/
+data/processed/
+data/*.csv
+!data/sample/
+!data/sample/*.csv
+
+# SQL Server artifacts
+*.bak
+*.mdf
+*.ldf
+*.ndf
+*.dacpac
+*.bacpac
+*.sqlplan
+
+# Tableau extracts and temporary files
+*.hyper
+*.tde
+*.twb~
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
